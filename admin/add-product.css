@@ -52,3 +52,18 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin-top: 80px;
   }
+  .navwid{
+    max-width: 100%;
+}
+.rowwid{
+    max-width: 60%;
+}
+
+  .btn{
+    background: blue;
+    color: white;
+  }
+  .btn:hover{
+    background: orangered;
+    color: white;
+  }
