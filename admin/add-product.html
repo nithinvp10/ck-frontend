@@ -7,71 +7,13 @@
     
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="contact.css">
-    <style>
-body {
-    background-color: #f8f9fa;
-    padding: 20px;
-}
-
-.navbar {
-    background-color: #fff;
-}
-
-.navbar-brand {
-    color: #007bff !important;
-    font-size: 1.5rem;
-    font-weight: 700;
-}
-
-.navbar-nav .nav-link {
-    color: #007bff !important;
-    font-size: 1rem;
-    font-weight: 500;
-    transition: background-color 0.3s, color 0.3s;
-    border-radius: 6px;
-}
-
-.navbar-nav .nav-link:hover {
-    background-color:orangered;
-    color: #fff !important;
-}
-
-
-
-
- /* footer  */
- footer {
-    background-color: #333;
-    color: white;
-    text-align: center;
-    padding: 1em;
-    margin-top: 2em;
-    position: relative;
-    bottom: 0px;
-    left: 0px;
-    width: 100%;
-    bottom: 0;
-    position:fixed;
-}
-.add-container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-top: 80px;
-  }
-
-
-    </style>
+    <link rel="stylesheet" href="add-product.css">
 </head>
 <body>
 
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-light fixed-top">
-        <div class="container">
+        <div class="container navwid">
             <a class="navbar-brand" href="#">Communty kitchen</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -89,9 +31,6 @@ body {
                         <a class="nav-link" href="all-users.css">USERS</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="delivery.html">DELIVRY</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#">LOGOUT</a>
                     </li>
                 </ul>
@@ -100,19 +39,21 @@ body {
     </nav>
 
 <section>
-    <div class="container md-4 add-container">
+    <div class="container md-4 add-container rowwid">
         <div class="row">
             <div class="col-md-11">
             <h2 class="text-center MD-5">Add product</h2>
             <form action="" method="post">
-              <label for="">NAME</label>
-              <input type="text" name="name" class="form-control">
-              <label for="">DISCRIPTION</label>
-              <input type="text" name="descripton" class="form-control">
-              <label for="">PRICE</label>
-              <input type="text" name="price" class="form-control">
-              <label for="">IMAGE</label>
-              <input type="file" name="image" class="form-control">
+              <label for="name">NAME</label>
+              <input type="text" id="name" name="name" class="form-control">
+              <label for="discription">DISCRIPTION</label>
+              <input type="text" id="descripton" name="descripton" class="form-control">
+              <label for="price">PRICE</label>
+              <input type="text" id="price" name="price" class="form-control">
+              <label for="image">IMAGE</label>
+              <input type="file" id="image" name="image" class="form-control">
+              <label for="ingredients">INGREDIENTS</label>
+              <input type="text" id="ingredients" name="ingredients" class="form-control">
 
               <button type="submit" class="btn btn-success mt-4">submit</button>
 
