@@ -10,7 +10,6 @@ body {
  
 
 .form-inline input {
-    width: 30px; /* Adjust the search input width as per your preference */
     border-radius: 15px; /* Add border-radius for a rounded input */
   }
 
